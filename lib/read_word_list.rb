@@ -3,11 +3,10 @@ require "fileutils"
 
 class ReadWordList
 
-  def initialize(filename)
-    @filename = filename
+  def initialize
   end
 
-  def readlines(filename)
+  def readlines filename
     buffer = File.readlines filename if File.exist? filename
   end
 

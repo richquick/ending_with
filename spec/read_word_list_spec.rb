@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe ReadWordList do
 
-  let(:results) {ReadWordList.new('files/words.txt')}
+  let(:results) {ReadWordList.new}
 
   context "read the lines of a file" do
 

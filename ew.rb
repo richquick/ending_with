@@ -33,3 +33,7 @@ word_list = word_file.readlines options[:input]
 
 domain_object = CheckDomain.new
 domain_list   = domain_object.check_domains word_list, options[:tld]
+domains       = domain_list
+
+write_domain_object = WriteDomainList.new
+write_domain_object.write_file domains, options[:output]
